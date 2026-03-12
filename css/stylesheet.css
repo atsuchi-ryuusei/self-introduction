@@ -68,11 +68,6 @@ article {
     padding: 2em 0;
 }
 article.l-main-container {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    gap: 100px;
-
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -83,6 +78,9 @@ section.l-section-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2em 0;
+}
+.l-section-container + .l-section-container {
+    margin-top: 100px;
 }
 section.l-section-padding {
     padding: 2em 5%;
@@ -287,7 +285,6 @@ footer div.c-copyright {
 }
 .l-works-card {
     margin: 0 auto 1.5em;
-    width: 400px;
 }
 .l-works-card__image {
     width: 400px;
@@ -547,4 +544,8 @@ footer div.c-copyright {
 .p-back-link svg {
     margin-right: 3px;
     margin-bottom: -4px;
+}
+
+@media screen {
+    
 }
