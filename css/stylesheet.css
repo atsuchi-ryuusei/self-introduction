@@ -85,7 +85,7 @@ section.l-section-container {
     padding: 2em 0;
 }
 section.l-section-padding {
-    padding: 2em 75px;
+    padding: 2em 5%;
 }
 section.p-section {
     background-color: #ffffff;
@@ -542,4 +542,9 @@ footer div.c-copyright {
 }
 .l-project-context-container + .l-project-context-container {
     margin-top: 1em;
+}
+/*--back--*/
+.p-back-link svg {
+    margin-right: 3px;
+    margin-bottom: -4px;
 }
