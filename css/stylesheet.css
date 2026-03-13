@@ -45,18 +45,18 @@ html {
 .l-header__title {
     margin: auto 0;
 }
-header nav.l-header__nav ul {
+.l-header__nav ul {
     display: flex;
     gap: 1em;
     padding: 0;
 }
-header nav.p-header__nav ul {
+.p-header__nav ul {
     list-style: none;
     font-size: 1.5em;
 }
 
 /*--main--*/
-main.l-main {
+.l-main {
     max-width: 1200px;
     width: 100%;
     margin: 5em auto;
@@ -65,31 +65,30 @@ article {
     text-align: center;
     padding: 2em 0;
 }
-article.l-main-container {
+.l-main-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-section.l-section-container {
+.l-section-container {
     width: 100%;
-    max-width: 1000px;
     margin: 0 auto;
     padding: 2em 0;
 }
 .l-section-container + .l-section-container {
     margin-top: 100px;
 }
-section.l-section-padding {
+.l-section-padding {
     padding: 2em 5%;
 }
-section.p-section {
+.p-section {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(46, 54, 61, 0.06);
     border: 1px solid #eeeeee;
 }
-article a.c-btn {
+a.c-btn {
     display: inline-block !important;
     cursor: pointer;
     background-color: var(--accent-color);
@@ -100,16 +99,13 @@ article a.c-btn {
     padding: 10px 50px;
     border-radius: 50vh;
 }
-article a.c-btn:hover {
+a.c-btn:hover {
     background-color: #ffffff;
     color: var(--text-color);
     border: var(--accent-color) solid 2px;
     opacity: 1;
 }
-article button.c-btn a:hover {
-    opacity: 1;
-}
-article div.p-top-link {
+.p-top-link {
     cursor: pointer;
     position: fixed;
     right: 20px;
@@ -123,40 +119,40 @@ article div.p-top-link {
     z-index: 100;
     transition: all 0.3s ease;
 }
-article div.p-top-link:hover {
+.p-top-link:hover {
     background-color: #ffffff;
     color: var(--text-color);
     border: var(--accent-color) solid 2px;
 }
-article div.p-top-link a:hover {
+.p-top-link a:hover {
     opacity: 1;
 }
 /*--footer--*/
-footer.l-footer {
+.l-footer {
     text-align: center;
 }
-footer.p-footer {
+.p-footer {
     background-color: var(--accent-color);
     color: #f0f4f7;
 }
-footer.l-footer h2 {
+.l-footer h2 {
     margin-top: 0;
     margin-bottom: 1em;
     padding-top: 2em;
 }
-footer p.p-mailaddress {
+.p-mailaddress {
     font-size: 2em;
     margin: 0;
     margin-bottom: 0.5em;
 }
-footer p.p-mailaddress a {
+.p-mailaddress a {
     transition: opacity 0.3s;
 }
-footer p.p-mailaddress a:hover {
+.p-mailaddress a:hover {
     opacity: 0.6;
 
 }
-footer button.c-btn-copy {
+.c-btn-copy {
     cursor: pointer;
     background-color: #f0f4f7;
     color: #4a3d52;
@@ -166,25 +162,25 @@ footer button.c-btn-copy {
     width: 5em;
     height: 3em;
 }
-footer button.c-btn-copy:hover {
+.c-btn-copy:hover {
     background-color: #4a3d52;
     color: #f0f4f7;
     border-radius: 0.5em;
     border: #f0f4f7 solid 2px;
 }
-footer button.c-btn-copy.is-copied {
+.c-btn-copy.is-copied {
     background-color: #4a3d52;
     color: #f0f4f7;
     border-radius: 0.5em;
     border: #f0f4f7 solid 2px;
 }
-footer button .c-btn-copy__text::before {
+.c-btn-copy__text::before {
     content: "Copy";
 }
-footer button.c-btn-copy.is-copied .c-btn-copy__text::before {
+.c-btn-copy.is-copied .c-btn-copy__text::before {
     content: "Copied!";
 }
-footer div.c-copyright {
+.c-copyright {
     color: #c0c6c9;
     margin-top: 2em;
 }
@@ -329,8 +325,8 @@ footer div.c-copyright {
 /*--about-me--*/
 /*--profile-index--*/
 .l-profile-index__list {
-    width: 300px;
-    margin: 0 auto;
+    margin: 0 18em;
+    padding-right: 40px;
 }
 .p-profile-index__list {
     font-size: 20px;
@@ -362,7 +358,7 @@ footer div.c-copyright {
 
 /*--profile-chapter--*/
 .l-profile-chapter-container {
-    margin: 0 100px;
+    margin: 0 5em;
 }
 .l-profile-chapter-container + .l-profile-chapter-container {
     margin-top: 2em;
@@ -421,7 +417,7 @@ footer div.c-copyright {
     border-top: var(--accent-color) dotted 3px;
 }
 .l-skills-card__meta-text {
-    margin: 1em auto 1em 32px;
+    margin: 1em 2em;
     text-align: left;
     position: relative;
     padding-left: 1.2em;
@@ -475,7 +471,7 @@ footer div.c-copyright {
 /*--テキスト--*/
 .l-project-info {
     text-align: left;
-    padding: 0 100px;
+    padding: 0 5em;
 }
 
 /*--タイトル--*/
@@ -530,8 +526,12 @@ footer div.c-copyright {
 .p-project-link__icon {
     width: 1.3em;
     height: 1.3em;
+    margin-bottom: -4px;
 }
 /*--context--*/
+ul.p-project-context__list li.p-project-context__text::marker {
+    font-size: small;
+}
 .l-project-context__text {
     margin-bottom: 0.5em !important;
 }
@@ -548,7 +548,32 @@ footer div.c-copyright {
 }
 
 @media screen and (max-width: 1024px) {
-    
+    /*--header--*/
+    .l-header__title {
+        font-size: 1.8em;
+    }
+    .l-header__nav ul {
+        gap: 0.5em;
+    }
+    /*--main--*/
+    .l-main-container {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: none;
+    }
+    /*index.html*/
+    /*--hero--*/
+    .l-hero {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    /*plofire.html*/
+    /*--index--*/
+    .l-profile-index__list {
+        margin-right: 12em;
+        margin-left: 12em;
+    }
 }
 
 @media screen and (max-width: 599px) {
