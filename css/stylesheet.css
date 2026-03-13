@@ -13,30 +13,28 @@ html {
     scroll-behavior: smooth;
 }
 
-/*body {
-    font
-}*/
-body.p-site-thema {
+/*--body--*/
+.p-site-thema {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-body a {
+.l-page a {
     text-decoration: none;
     color: inherit;
 }
-body a:hover {
+.l-page a:hover {
     opacity: 0.5;
 }
 
 /*--header--*/
-header.l-header {
+.l-header {
     padding: 0 2em;
 }
-header.p-header {
+.p-header {
     background-color: var(--accent-color);
     color: #c0c6c9;
 }
-header div.l-header__container {
+.l-header-container {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -44,7 +42,7 @@ header div.l-header__container {
     gap: 1em;
     margin: 0 auto;
 }
-header h1 {
+.l-header__title {
     margin: auto 0;
 }
 header nav.l-header__nav ul {
@@ -404,7 +402,7 @@ footer div.c-copyright {
     transform: scaleX(1);
     opacity: 0.7;
 }
-.p-profile-chapter__btn svg {
+.p-profile-chapter__btn__icon {
     width: 1.3em;
     height: auto;
     margin: 0 auto -4px auto;
@@ -508,11 +506,11 @@ footer div.c-copyright {
     font-style: italic;
     letter-spacing: 0.02em;
 }
-.p-project-visit {
+.p-project-link {
     color: var(--accent-color);
     position: relative;
 }
-.p-project-visit::after{
+.p-project-link::after{
     content: "";
     position: absolute;
     left: 0;
@@ -525,11 +523,11 @@ footer div.c-copyright {
     transform-origin: left;
     transition: transform 0.5s ease;
 }
-.p-project-visit:hover::after{
+.p-project-link:hover::after{
     transform: scaleX(1);
     opacity: 0.5;
 }
-.p-project-visit svg {
+.p-project-link__icon {
     width: 1.3em;
     height: 1.3em;
 }
@@ -541,11 +539,18 @@ footer div.c-copyright {
     margin-top: 1em;
 }
 /*--back--*/
-.p-back-link svg {
+.p-back-link {
+    margin-top: 100px;
+}
+.p-back-link__icon {
     margin-right: 3px;
     margin-bottom: -4px;
 }
 
-@media screen {
+@media screen and (max-width: 1024px) {
     
+}
+
+@media screen and (max-width: 599px) {
+
 }
