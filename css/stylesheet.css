@@ -687,6 +687,7 @@ ul.p-project-context__list li.p-project-context__text::marker {
         letter-spacing: 0.03em;
     }
 }
+
 @media screen and (max-width: 559px) {
     /*body*/
     /*--header--*/
@@ -701,5 +702,17 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .l-profile-index__list {
         margin: 0 10%;
         padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    /*body*/
+    /*--header--*/
+    .l-header__nav ul {
+        gap: 1em;
+    }
+    /*--fotter--*/
+    .p-mailaddress {
+        font-size: 1.5rem;
     }
 }
