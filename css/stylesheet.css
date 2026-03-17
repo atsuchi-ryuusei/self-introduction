@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.br-559 {
+    display: none;
+}
+
 /*--body--*/
 .p-site-thema {
     background-color: var(--bg-color);
@@ -44,6 +48,9 @@ html {
 }
 .l-header__title {
     margin: auto 0;
+}
+.l-header__nav {
+    margin: 0 1em;
 }
 .l-header__nav ul {
     display: flex;
@@ -202,13 +209,13 @@ a.c-btn:hover {
 /*--about-me--*/
 .l-about-me--flex {
     display: flex;
-    justify-content: space-between;
-    gap: 2em;
+    justify-content: space-evenly;
+    gap: 1em;
 }
 .p-about-me__image {
     border-radius: 50%;
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
@@ -264,6 +271,7 @@ a.c-btn:hover {
     border: 1px solid var(--color-cert);
     padding: 1px 5px;
     border-radius: 50vh;
+    width: fit-content;
 }
 .c-badge--learning p {
     background-color: var(--bg-learn);
@@ -271,6 +279,7 @@ a.c-btn:hover {
     border: 1px solid var(--color-learn);
     padding: 1px 5px;
     border-radius: 50vh;
+    width: fit-content;
 }
 /*--works--*/
 .l-works--grid {
@@ -335,6 +344,7 @@ a.c-btn:hover {
 .p-profile-index__item {
     color: var(--accent-color);
     position: relative;
+    text-align: left;
 }
 .p-profile-index__item::after {
     content: "";
@@ -478,8 +488,9 @@ a.c-btn:hover {
 
 /*--タイトル--*/
 .l-project__title {
-    margin: 1em 3em;
+    margin: 1em;
     padding: 0;
+    padding-left: 3em;
 }
 .p-project__title {
     font-size: 2em;
@@ -558,9 +569,6 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .l-header__title {
         font-size: 1.8em;
     }
-    .l-header__nav ul {
-        gap: 0.5em;
-    }
     /*--main--*/
     .l-main-container {
         width: auto;
@@ -616,6 +624,23 @@ ul.p-project-context__list li.p-project-context__text::marker {
     }
 
     /*index.html*/
+    /*--about-me--*/
+    .l-about-me--flex {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+    }
+    .p-about-me__image {
+        width: 30%;
+        height: 30%;
+    }
+    .p-about-me__text {
+        width: 100%;
+    }
+    .p-about-me__name {
+        text-align: center !important;
+    }
+
     /*--skills--*/
     .l-skills-card--grid {
         grid-template-columns: 1fr;
@@ -634,6 +659,20 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .l-profile-skills {
         margin: 0 1em;
     }
+    .l-skills-card {
+        flex-wrap: wrap;
+    }
+    .l-skills-card h4 {
+        margin: 1rem auto;
+        padding-right: 2em;
+    }
+    .c-badge {
+        width: 100%;
+        order: -1;
+    }
+    .c-badge p {
+        margin: 1em auto 0;
+    }
     .l-skills-card__meta-text {
         margin: 1em;
     }
@@ -641,6 +680,20 @@ ul.p-project-context__list li.p-project-context__text::marker {
     /*project.html*/
     /*--info--*/
     .l-project-info {
-        padding: 0 1em;
+        margin: 1em;
+        padding: 0 0.5em;
+    }
+    .p-project-context__list {
+        letter-spacing: 0.03em;
+    }
+}
+@media screen and (max-width: 559px) {
+    /*body*/
+    /*--header--*/
+    .br-559 {
+        display: block;
+    }
+    .l-header__nav ul {
+        gap: 3em;
     }
 }
