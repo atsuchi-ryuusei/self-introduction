@@ -696,4 +696,9 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .l-header__nav ul {
         gap: 3em;
     }
+    /*profile*/
+    /*--index--*/
+    .l-profile-index__list {
+        margin: 0 10%;
+    }
 }
