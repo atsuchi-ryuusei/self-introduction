@@ -615,6 +615,53 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .l-header__nav ul li a p {
         margin: 0.5em 0;
     }
+
+    /*index*/
+    /*--about-me--*/
+    .p-about-me__image {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 846px) {
+    /*index.html*/
+    /*--skills--*/
+    .l-skills-card--grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    /*profile.html*/
+    /*--index--*/
+    .l-profile-index__list {
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    /*profile.html*/
+    /*--skills--*/
+    .l-profile-skills {
+        margin: 0 1em;
+    }
+    .l-skills-card {
+        flex-wrap: wrap;
+    }
+    .l-skills-card h4 {
+        margin: 1rem auto;
+        padding-right: 2em;
+    }
+    .c-badge {
+        width: 100%;
+        order: -1;
+    }
+    .c-badge p {
+        margin: 1em auto 0;
+    }
+    .l-skills-card__meta-text {
+        margin: 1em;
+    }
 }
 
 @media screen and (max-width: 599px) {
@@ -640,7 +687,6 @@ ul.p-project-context__list li.p-project-context__text::marker {
     .p-about-me__name {
         text-align: center !important;
     }
-
     /*--skills--*/
     .l-skills-card--grid {
         grid-template-columns: 1fr;
