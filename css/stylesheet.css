@@ -723,14 +723,9 @@ ul.p-project-context__list li.p-project-context__text::marker {
 
 @media screen and (max-width: 559px) {
     /*body*/
-    /*--header--*/
-    .br-header__title {
-        display: block;
-    }
     .l-header__nav ul {
         gap: 3em;
-    }
-    /*profile*/
+    }/*ulの余白*/
 }
 
 @media screen and (max-width: 460px) {
@@ -738,9 +733,9 @@ ul.p-project-context__list li.p-project-context__text::marker {
     /*--header--*/
     .l-header__nav ul {
         gap: 1em;
-    }
+    }/*ulの余白*/
     /*--fotter--*/
     .p-mailaddress {
         font-size: 1.5rem;
-    }
+    }/*フッター メールアドレスのフォントサイズを小さく*/
 }
