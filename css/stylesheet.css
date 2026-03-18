@@ -335,8 +335,9 @@ a.c-btn:hover {
 /*--about-me--*/
 /*--profile-index--*/
 .l-profile-index__list {
-    margin: 0 35%;
-    padding-right: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
 }
 .p-profile-index__list {
     font-size: 20px;
@@ -582,16 +583,25 @@ ul.p-project-context__list li.p-project-context__text::marker {
         margin-right: 5%;
         margin-left: 5%;
     }
-    /*plofire.html*/
-    /*--index--*/
-    .l-profile-index__list {
-        margin: 0 25%;
-    }
 }
 
 @media screen and (max-width: 937px) {
     .l-skills-card {
         gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    /*index.html*/
+    /*--skills--*/
+    .l-skills-card--grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 879px) {
+    .br-559 {
+        display: block;
     }
 }
 
@@ -623,24 +633,13 @@ ul.p-project-context__list li.p-project-context__text::marker {
     }
 }
 
-@media screen and (max-width: 846px) {
-    /*index.html*/
-    /*--skills--*/
-    .l-skills-card--grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 717px) {
-    /*profile.html*/
-    /*--index--*/
-    .l-profile-index__list {
-        margin: 0 15%;
-    }
-}
 
 @media screen and (max-width: 625px) {
     /*profile.html*/
+    /*--text*/
+    .l-profile-chapter-container {
+        margin: 0 1em;
+    }
     /*--skills--*/
     .l-profile-skills {
         margin: 0 1em;
@@ -693,10 +692,6 @@ ul.p-project-context__list li.p-project-context__text::marker {
     }
 
     /*profile.html*/
-    /*--index--*/
-    .l-profile-index__list {
-        margin: 0 15%;
-    }
     /*--text*/
     .l-profile-chapter-container {
         margin: 0 1em;
@@ -744,11 +739,6 @@ ul.p-project-context__list li.p-project-context__text::marker {
         gap: 3em;
     }
     /*profile*/
-    /*--index--*/
-    .l-profile-index__list {
-        margin: 0 10%;
-        padding-right: 0;
-    }
 }
 
 @media screen and (max-width: 460px) {
