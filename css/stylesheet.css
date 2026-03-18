@@ -13,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.br-559 {
+.br-header__title {
     display: none;
 }
 
@@ -566,29 +566,44 @@ ul.p-project-context__list li.p-project-context__text::marker {
 }
 
 @media screen and (max-width: 1024px) {
+    /*body*/
     /*--header--*/
     .l-header__title {
         font-size: 1.8em;
-    }
+    }/*ヘッダーのフォントを小さく*/
     /*--main--*/
     .l-main-container {
         width: auto;
         margin-left: 5%;
         margin-right: 5%;
         max-width: none;
-    }
+    }/*左右の余白の設定*/
+
     /*index.html*/
     /*--hero--*/
     .l-hero {
         margin-right: 5%;
         margin-left: 5%;
-    }
+    }/*heroの左右余白*/
 }
 
 @media screen and (max-width: 937px) {
+    /*index.html*/
+    /*--skills--*/
     .l-skills-card {
         gap: 0.5em;
-    }
+    }/*skills-cardのgap*/
+}
+
+@media screen and (max-width: 894px) {
+    /*body*/
+    /*--header--*/
+    .l-header__title {
+        margin-left: 3em;
+    }/*タイトルの左に余白*/
+    .br-header__title {
+        display: block;
+    }/*タイトルを二行に*/
 }
 
 @media screen and (max-width: 882px) {
@@ -596,78 +611,83 @@ ul.p-project-context__list li.p-project-context__text::marker {
     /*--skills--*/
     .l-skills-card--grid {
         grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 879px) {
-    .br-559 {
-        display: block;
-    }
+    }/*index.htmlのskillsを1列に*/
 }
 
 @media screen and (max-width: 870px) {
-    /*--header--*//*ヘッダーを二列に*/
+    /*--header--*/
     .l-header-container {
         flex-direction: column;
         gap: 0;
         padding: 1em 0;
-    }
+    }/*ヘッダーを二行に*/
     .l-header__title {
         margin-top: 0.5em;
-    }
+        margin-left: 0;
+    }/*ヘッダータイトル上に余白、左余白を削除*/
     .p-header__title {
         font-size: 2em;
-    }
+    }/*ヘッダータイトルのフォントを元に戻す*/
     .l-header__nav ul {
         margin: 0;
         gap: 4em;
-    }
+    }/*navの余白*/
     .l-header__nav ul li a p {
         margin: 0.5em 0;
-    }
+    }/*navの余白*/
 
     /*index*/
     /*--about-me--*/
     .p-about-me__image {
         width: 140px;
-    }
+    }/*about-meの近影サイズを以降固定に*/
 }
 
 
 @media screen and (max-width: 640px) {
     /*profile.html*/
-    /*--text*/
+    /*--text--*/
     .l-profile-chapter-container {
         margin: 0 1em;
-    }
+    }/*profile.htmlのテキスト左右の余白を狭める*/
     /*--skills--*/
     .l-profile-skills {
         margin: 0 1em;
-    }
+    }/*profile.htmlのskills-cardの左右の余白を狭める*/
     .l-skills-card {
         flex-wrap: wrap;
-    }
+    }/*profile.htmlのskills-cardのレイアウト変更*/
     .l-skills-card h4 {
         margin: 1rem auto;
         padding-right: 2em;
-    }
+    }/*技能名の余白*/
     .c-badge {
         width: 100%;
         order: -1;
-    }
+    }/*バッジを上に*/
     .c-badge p {
         margin: 1em auto 0;
-    }
+    }/*バッジの余白*/
     .l-skills-card__meta-text {
         margin: 1em;
-    }
+    }/*skills補足の余白*/
+
+    /*project.html*/
+    /*--title--*/
+    .l-project__title {
+        padding-left: 0.5em !important;
+    }/*project.htmlタイトルの左余白*/
+    /*--text--*/
+    .l-project-info {
+        padding: 0 1em;
+    }/*profile.htmlのinfoの左右余白*/
 }
 
 @media screen and (max-width: 599px) {
     /*--header--*/
     .l-header__title {
         font-size: 1.8em;
-    }
+    }/*ヘッダータイトルのフォント小さく*/
 
     /*index.html*/
     /*--about-me--*/
@@ -675,64 +695,36 @@ ul.p-project-context__list li.p-project-context__text::marker {
         flex-direction: column;
         gap: 0.5em;
         align-items: center;
-    }
+    }/*about-meを縦並びに*/
     .p-about-me__image {
         width: 30%;
         height: 30%;
-    }
+    }/*近影のサイズ固定を解除*/
     .p-about-me__text {
         width: 100%;
-    }
+    }/*about-meのテキストの横幅*/
     .p-about-me__name {
         text-align: center !important;
-    }
-    /*--skills--*/
-    .l-skills-card--grid {
-        grid-template-columns: 1fr;
-    }
-
-    /*profile.html*/
-    /*--text*/
-    .l-profile-chapter-container {
-        margin: 0 1em;
-    }
-    /*--skills--*/
-    .l-profile-skills {
-        margin: 0 1em;
-    }
-    .l-skills-card {
-        flex-wrap: wrap;
-    }
-    .l-skills-card h4 {
-        margin: 1rem auto;
-        padding-right: 2em;
-    }
-    .c-badge {
-        width: 100%;
-        order: -1;
-    }
-    .c-badge p {
-        margin: 1em auto 0;
-    }
-    .l-skills-card__meta-text {
-        margin: 1em;
-    }
+    }/*about-me名前の位置*/
     
     /*project.html*/
+    /*--title--*/
+    .l-project__title {
+        padding-left: 0 !important;
+    }/*project.htmlタイトルの左余白*/
     /*--info--*/
     .l-project-info {
-        margin: 1em;
         padding: 0 0.5em;
-    }
+    }/*profile.htmlのinfoの左右余白*/
     .p-project-context__list {
         letter-spacing: 0.03em;
-    }
+    }/*contextの文字の余白詰め*/
 }
 
 @media screen and (max-width: 559px) {
     /*body*/
     /*--header--*/
-    .br-559 {
+    .br-header__title {
         display: block;
     }
     .l-header__nav ul {
