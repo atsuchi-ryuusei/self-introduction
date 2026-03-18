@@ -634,7 +634,7 @@ ul.p-project-context__list li.p-project-context__text::marker {
 }
 
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 640px) {
     /*profile.html*/
     /*--text*/
     .l-profile-chapter-container {
