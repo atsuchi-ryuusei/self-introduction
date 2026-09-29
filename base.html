@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MyBaseStyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Atsuchi Ryuusei Digital Portfolio</title>
+</head>
+<body class="l-page" id="index">
+    <header class="p-header" id="header">
+        <div class="p-header__inner">
+            <h1 class="p-header__title"><a href="index.html">Atsuchi Ryuusei Portfolio</a></h1>
+            <div class="hamburger-icon" id="hamburger-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="p-global-nav">
+                <ul>
+                    <li>
+                        <a href="profile.html">
+                            <span class="p-global-nav__en">profile</span>
+                            <span class="p-global-nav__ja">プロフィール</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works.html">
+                            <span class="p-global-nav__en">works</span>
+                            <span class="p-global-nav__ja">ワーク</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="p-global-nav__en">contact</span>
+                            <span class="p-global-nav__ja">コンタクト</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l-main p-main">
+        <article class="l-main-container p-portfolio">
+            <section class="l-section-container l-section-padding p-section p-about-me">
+                <h2>About Me</h2>
+                <div class="p-about-me__flex" style="display: flex; justify-content: space-between; gap: 1em; padding: 0 2em;">
+                    <img src="image/PXL_20250424_024259809.PORTRAIT.ORIGINAL~2.jpg" alt="厚地隆聖の近影" style="border-radius: 50%; width: 250px; height: 250px; object-fit: cover;">
+                    <div class="p-about-me__text" style="width: 70%;">
+                        <h3>厚地隆聖</h3>
+                        <p>2001年2月生まれ、鹿児島県出身。<br>
+                        趣味はドライブやボードゲーム、プラモデルなど、組み立てることや自分の考えを形にすることが好きです。<br>
+                        現在はHTML・CSSを中心に、Webサイト制作の技術向上に取り組んでいます。</p>
+                    </div>
+                </div>
+                <div class="l-button">
+                    <button class="c-button-more">
+                        <a href="">MORE</a>
+                    </button>
+                </div>
+            </section>
+            <section class="l-section-container l-section-padding p-section p-skills">
+                <h2>Skill＆Certification</h2>
+                <div class="p-skills__layout">
+                    <div class="p-skills__item">
+                        <ul>
+                            <li>Webクリエイター能力認定試験 HTML5 エキスパート</li>
+                            <li>PHP 学習中</li>
+                            <li>MOS-excel 2019</li>
+                            <li>MOS-Word Expert 2019</li>
+                            <li>MOS-PowerPoint 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="l-section-container p-section p-archive">
+                <h2>Works</h2>
+                <div class="p-archive__item">
+                    <img src="image/_C__Users_user_Desktop_AEE8B5AAE98C_web_1_garuhi_harikyuuin_index.html.png" alt="ガルヒ鍼灸院ホームページ" style="border: 2px solid #000; width: 40%">
+                    <h3>ガルヒ鍼灸院</h3>
+                    <time class="c-item__date">2025/10/16</time>
+                    <p>事業所内の課題で作成しました。基本的なHTML,CSSの使い方とレスポンシブ対応が課題の作品。</p>
+                </div>
+            </section>
+            <div class="p-top-link">
+                <a href="#header" class="c-btn-top">Page Top</a>
+            </div>
+        </article>
+    </main>
+    <footer class="l-footer p-footer">
+        <h2 id="contact">Contact</h2>
+        <p class="p-mailaddress"><a href="mailto:atsuchi.ryuusei@gmail.com">atsuchi.ryuusei&commat;gmail.com</a></p>
+        <button id="copy-btn" class="c-btn-copy js-copy-trigger" aria-label="メールアドレスをコピー">
+            <span class="c-btn-copy__text" aria-hidden="true"></span>
+        </button>
+        <div class="c-copyright"><small>&copy; 2026 Atsuchi Ryuusei</small></div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="js/script.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

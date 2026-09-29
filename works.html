@@ -7,50 +7,73 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Works : Atsuchi Ryuusei Digital Portfolio</title>
 </head>
-<body class="l-page p-site-thema" id="works">
-    <header class="l-header p-header" id="header">
-        <div class="l-header-container p-header-container">
-            <h1 class="l-header__title p-header__title"><a href="index.html">Atsuchi Ryuusei <br class="br-header__title">Digital Portfolio</a></h1>
-            <nav class="l-header__nav p-header__nav">
+<body class="l-page" id="index">
+    <header class="p-header" id="header">
+        <div class="p-header__inner">
+            <h1 class="p-header__title"><a href="index.html">Atsuchi Ryuusei Portfolio</a></h1>
+            <div class="hamburger-icon" id="hamburger-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="p-global-nav">
                 <ul>
-                    <li><a href="profile.html"><p>profile</p></a></li>
-                    <li><a href="works.html"><p>works</p></a></li>
-                    <li><a href="#contact"><p>contact</p></a></li>
+                    <li>
+                        <a href="profile.html">
+                            <span class="p-global-nav__en">profile</span>
+                            <span class="p-global-nav__ja">プロフィール</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works.html">
+                            <span class="p-global-nav__en">works</span>
+                            <span class="p-global-nav__ja">ワーク</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="p-global-nav__en">contact</span>
+                            <span class="p-global-nav__ja">コンタクト</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="l-main p-main">
-        <article class="l-main-container p-main-container">
-            <section class="l-section-container p-section p-works">
-                <h2>Works</h2>
-                <div class="l-works--grid">
-                    <div class="l-works-card p-works-card">
-                        <a href="works/harikyuin.html">
-                            <img src="image/garuhi_harikyuuin_index.html.png" alt="ガルヒ鍼灸院ホームページ"
-                            class="l-works-card__image p-works-card__image">
-                        </a>
-                        <h3 class="p-works-card__title">ガルヒ鍼灸院</h3>
-                        <time class="c-item__time">2025/10/16</time>
-                        <a href="works/harikyuin.html" class="p-works-card__more">詳細➝</a>
-                    </div>
-                    <div class="l-works-card p-works-card">
-                    </div>
+    <main class="l-main">
+        <section class="l-section-container p-section p-works">
+            <h2>Works</h2>
+            <div class="l-works--grid">
+                <div class="l-works-card p-works-card">
+                    <a href="works/harikyuin.html">
+                        <img src="image/garuhi_harikyuuin_index.html.png" alt="ガルヒ鍼灸院ホームページ"
+                        class="l-works-card__image p-works-card__image">
+                    </a>
+                    <h3 class="p-works-card__title">ガルヒ鍼灸院</h3>
+                    <time class="c-item__time">2025/10/16</time>
+                    <a href="works/harikyuin.html" class="p-works-card__more">詳細➝</a>
                 </div>
-            </section>
-            <div class="p-top-link">
-                <a href="#header" class="c-btn-top">Page Top</a>
+                <div class="l-works-card p-works-card">
+                </div>
             </div>
-        </article>
+        </section>
+        <a href="#header" class="c-btn-top" aria-label="ページ上部へ戻る"><i data-lucide="chevron-up" class="p-pageTop"></i></a>
     </main>
-    <footer class="l-footer p-footer">
-        <h2 id="contact">Contact</h2>
-        <p class="p-mailaddress"><a href="mailto:atsuchi.ryuusei@gmail.com">atsuchi.ryuusei&commat;gmail.com</a></p>
-        <button id="copy-btn" class="c-btn-copy js-copy-trigger" aria-label="メールアドレスをコピー">
-            <span class="c-btn-copy__text" aria-hidden="true"></span>
+    <footer class="l-footer">
+        <h2 class="p-footer__title" id="contact">Contact</h2>
+        <button type="button" class="c-btn-mail" id="copyMail" aria-label="メールアドレスをコピー">
+            <span id="mailaddress">atsuchi.ryuusei&commat;gmail.com</span>
+            <i data-lucide="copy" class="p-mailCopy" id="copy-icon"></i>
+            <i data-lucide="circle-check-big" class="p-mailCheck" id="check-icon"></i>
         </button>
         <div class="c-copyright"><small>&copy; 2026 Atsuchi Ryuusei</small></div>
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <script src="js/script.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

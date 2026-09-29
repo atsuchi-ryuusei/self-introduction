@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MyBaseStyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Atsuchi Ryuusei Digital Portfolio</title>
+</head>
+<body class="l-page" id="index">
+    <header class="p-header" id="header">
+        <div class="p-header__inner">
+            <h1 class="p-header__title"><a href="index.html">Atsuchi Ryuusei Portfolio</a></h1>
+            <div class="hamburger-icon" id="hamburger-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="p-global-nav">
+                <ul>
+                    <li>
+                        <a href="profile.html">
+                            <span class="p-global-nav__en">profile</span>
+                            <span class="p-global-nav__ja">プロフィール</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works.html">
+                            <span class="p-global-nav__en">works</span>
+                            <span class="p-global-nav__ja">ワーク</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="p-global-nav__en">contact</span>
+                            <span class="p-global-nav__ja">コンタクト</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l-main">
+        <section class="l-section-container p-section">
+            
+        </section>
+        <a href="#header" class="c-btn-top" aria-label="ページ上部へ戻る"><i data-lucide="chevron-up" class="p-pageTop"></i></a>
+    </main>
+    <footer class="l-footer">
+        <h2 class="p-footer__title" id="contact">Contact</h2>
+        <button type="button" class="c-btn-mail" id="copyMail" aria-label="メールアドレスをコピー">
+            <span id="mailaddress">atsuchi.ryuusei&commat;gmail.com</span>
+            <i data-lucide="copy" class="p-mailCopy" id="copy-icon"></i>
+            <i data-lucide="circle-check-big" class="p-mailCheck" id="check-icon"></i>
+        </button>
+        <div class="c-copyright"><small>&copy; 2026 Atsuchi Ryuusei</small></div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="js/script.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
