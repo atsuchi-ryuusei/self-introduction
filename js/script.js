@@ -58,4 +58,3 @@ const observer = new IntersectionObserver((entries) => {
 
 // 3.監視対象
 observer.observe(header);
-

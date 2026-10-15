@@ -51,6 +51,38 @@
                     趣味はドライブやボードゲーム、プラモデルなど、組み立てることや自分の考えを形にすることが好きです。<br>
                     現在はHTML・CSSを中心に、Webサイト制作の技術向上に取り組んでいます。</p>
                 </div>
+                <div class="l-slider p-slider">
+                    <div class="p-slider__images">
+                        <img src="image/cape_sata.jpg" alt="" class="p-slider__image is-active">
+                        <img src="image/bg_TornadoSplash.jpg" alt="" class="p-slider__image">
+                        <img src="image/GUNPLA01.jpg" alt="" class="p-slider__image">
+                        <img src="image/warhammer01.jpg" alt="" class="p-slider__image">
+                        <div class="p-slider__controls">
+                            <button type="button" aria-label="前のスライドへ" class="p-slider__btn--prev">
+                                <i data-lucide="chevron-left" class="p-slider--prev"></i>
+                            </button>
+                            <button type="button" aria-label="次のスライドへ" class="p-slider__btn--next">
+                                <i data-lucide="chevron-right" class="p-slider--next"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-slider__indicators">
+                        <ul class="p-slider__indicators-list">
+                            <li class="p-slider__indicators-item">
+                                <button type="button" class="p-slider__indicator is-active" aria-label="1枚目のスライドへ"></button>
+                            </li>
+                            <li class="p-slider__indicators-item">
+                                <button type="button" class="p-slider__indicator" aria-label="2枚目のスライドへ"></button>
+                            </li>
+                            <li class="p-slider__indicators-item">
+                                <button type="button" class="p-slider__indicator" aria-label="3枚目のスライドへ"></button>
+                            </li>
+                            <li class="p-slider__indicators-item">
+                                <button type="button" class="p-slider__indicator" aria-label="4枚目のスライドへ"></button>
+                            </li>
+                        </ul>
+                    </div>
+        </section>
             </div>
         </section>
         <section class="l-section-container l-section-padding p-section p-profile-index">
@@ -160,14 +192,23 @@
             <i data-lucide="copy" class="p-mailCopy" id="copy-icon"></i>
             <i data-lucide="circle-check-big" class="p-mailCheck" id="check-icon"></i>
         </button>
-        <div class="c-copyright"><small>&copy; 2026 Atsuchi Ryuusei</small></div>
+        <div class="l-footer__inner">
+            <!-- サイト全体のライセンス・免責注記 -->
+            <p class="p-footer__note">
+                <small>※本サイトに掲載している写真は、特記のない限り製作者本人が撮影したものです。</small>
+            </p>
+            <!-- 著作者表示 -->
+            <p class="p-footer__copyright">
+                <small>© 2026 Seiryu Atsuchi All Rights Reserved.</small>
+            </p>
+        </div>
     </footer>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <script src="js/script.js"></script>
-
     <script>
         lucide.createIcons();
     </script>
+
+    <script src="js/script.js"></script>
+    <script src="js/imageSlider.js"></script>
 </body>
 </html>
