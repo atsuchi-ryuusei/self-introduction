@@ -357,9 +357,9 @@ a.c-btn:hover {
 /*--about-me--*/
 /*--hero--*/
 .l-slider {
-    margin: 0 auto 2rem;/* bottomはmainのgap:3rem;と足し算して、mainのmarginと同じ数値に */
+    margin: 0.5rem auto 1rem;/* bottomはmainのgap:3rem;と足し算して、mainのmarginと同じ数値に */
     filter: brightness(1.1);
-    width: 90%;
+    width: 600px;
 }
 /* カルーセルコンテナ */
 .p-slider__images {
@@ -423,13 +423,16 @@ a.c-btn:hover {
     display: block;
 }
 /* dots-indicators */
+.p-slider__indicators {
+    margin-top: 1.5rem;
+}
 .p-slider__indicators-list {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     justify-content: center;
     list-style-type: none;
     padding: 0;
-    margin: 1rem 0 0;
+    margin: 0 auto;
 }
 .p-slider__indicators-item {
     display: flex;
@@ -466,21 +469,31 @@ a.c-btn:hover {
     transform: scale(1.3);
     filter: drop-shadow(0 2px 4px rgba(46, 54, 61, 0.3));
 }
+/* license */
+.p-slider__license {
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+.p-slider__license p {
+    margin: 0;
+}
+
 /*--profile-index--*/
-.l-profile-index__list {
+.p-profile-index__list {
     width: fit-content;
     margin: 0 auto;
     padding: 0;
-}
-.p-profile-index__list {
     font-size: 20px;
 }
-.p-profile-index__item {
+.p-profile-index__list li {
     color: var(--accent-color);
     position: relative;
     text-align: left;
+    margin: 0.5em 0;
 }
-.p-profile-index__item::after {
+.p-profile-index__list li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -493,40 +506,37 @@ a.c-btn:hover {
     transform-origin: left;
     transition: transform 0.3s ease;
 }
-.p-profile-index__item:hover::after {
+.p-profile-index__list li:hover::after {
     transform: scaleX(1);
     opacity: 0.7;
 }
-.p-profile-index__item p {
-    margin: 0.5em 0;
-}
 
 /*--profile-chapter--*/
-.l-profile-chapter-container {
+.p-profile-chapter-container {
     margin: 0 5em;
 }
-.l-profile-chapter-container + .l-profile-chapter-container {
+.p-profile-chapter-container + .p-profile-chapter-container {
     margin-top: 2em;
 }
-.l-profile-chapter__title {
-    text-align: left;
-}
 .p-profile-chapter__title {
+    text-align: left;
     border-bottom: var(--accent-color) solid 3px;
 }
 .p-profile-chapter__text {
     text-align: left;
 }
-.l-profile-chapter__btn {
-    text-align: right;
+.l-profile-skills .c-btn-index {
+    margin-top: 1.5rem;
 }
-.p-profile-chapter__btn {
+.c-btn-index {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
     font-size: small;
-
     color: var(--accent-color);
     position: relative;
 }
-.p-profile-chapter__btn::after{
+.c-btn-index::after{
     content: "";
     position: absolute;
     left: 0;
@@ -539,11 +549,11 @@ a.c-btn:hover {
     transform-origin: left;
     transition: transform 0.5s ease;
 }
-.p-profile-chapter__btn:hover::after{
+.c-btn-index:hover::after{
     transform: scaleX(1);
     opacity: 0.7;
 }
-.p-profile-chapter__btn__icon {
+.c-btn-index__icon {
     width: 1.3em;
     height: auto;
     margin: 0 auto -4px auto;
@@ -559,18 +569,14 @@ a.c-btn:hover {
 }
 .p-skills-card__meta {
     width: 100%;
-}
-.p-skills-card__meta {
     border-top: var(--accent-color) dotted 3px;
 }
 .p-skills-card__meta-text {
     margin: 1em 2em;
+    font-size: 0.85em;
     text-align: left;
     position: relative;
     padding-left: 1.2em;
-}
-.p-skills-card__meta-text {
-    font-size: 0.85em;
 }
 .p-skills-card__meta-text--certified {
     font-style: italic;
@@ -832,7 +838,10 @@ ul.p-project-context__list li.p-project-context__text::marker {
 
     /* -----profile----- */
     /* --about-me-- */
-    /* --hero-- */
+    /* --slider-- */
+    .l-slider {
+    width: 100%;
+    }
     .p-slider__controls {
         opacity: 0.5;
     }
@@ -840,8 +849,16 @@ ul.p-project-context__list li.p-project-context__text::marker {
         width: 3rem;
         height: 3rem;
     }
+    .p-slider__license {
+        font-size: 0.7rem;
+    }
+    /* --profile-chapter-- */
+    .p-profile-chapter-container {
+        margin: 0 auto;
+    }
     /* --skills-- */
     .l-profile-skills {
         margin: 0 auto;
     }
+
 }

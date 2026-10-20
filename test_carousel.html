@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MyBaseStyle.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Atsuchi Ryuusei Digital Portfolio</title>
+</head>
+<body class="l-page" id="index">
+    <header class="p-header" id="header">
+        <div class="p-header__inner">
+            <h1 class="p-header__title"><a href="index.html">Atsuchi Ryuusei Portfolio</a></h1>
+            <div class="hamburger-icon" id="hamburger-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="p-global-nav">
+                <ul>
+                    <li>
+                        <a href="profile.html">
+                            <span class="p-global-nav__en">profile</span>
+                            <span class="p-global-nav__ja">プロフィール</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works.html">
+                            <span class="p-global-nav__en">works</span>
+                            <span class="p-global-nav__ja">ワーク</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span class="p-global-nav__en">contact</span>
+                            <span class="p-global-nav__ja">コンタクト</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l-main">
+        <section class="l-hero p-hero">
+            <div class="p-hero__slider">
+                <img src="image/cape_sata.jpg" alt="" class="p-hero__image is-active">
+                <img src="image/bg_TornadoSplash.jpg" alt="" class="p-hero__image">
+                <img src="image/GUNPLA01.jpg" alt="" class="p-hero__image">
+                <img src="image/warhammer01.jpg" alt="" class="p-hero__image">
+                <div class="p-hero__controls">
+                    <button type="button" aria-label="前のスライドへ" class="p-hero__btn--prev">
+                        <i data-lucide="chevron-left" class="p-hero--prev"></i>
+                    </button>
+                    <button type="button" aria-label="次のスライドへ" class="p-hero__btn--next">
+                        <i data-lucide="chevron-right" class="p-hero--next"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="p-hero__indicators">
+                <ul class="p-hero__indicators-list">
+                    <li class="p-hero__indicators-item">
+                        <button type="button" class="p-hero__indicator is-active" aria-label="1枚目のスライドへ"></button>
+                    </li>
+                    <li class="p-hero__indicators-item">
+                        <button type="button" class="p-hero__indicator" aria-label="2枚目のスライドへ"></button>
+                    </li>
+                    <li class="p-hero__indicators-item">
+                        <button type="button" class="p-hero__indicator" aria-label="3枚目のスライドへ"></button>
+                    </li>
+                    <li class="p-hero__indicators-item">
+                        <button type="button" class="p-hero__indicator" aria-label="4枚目のスライドへ"></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="l-section-container p-section" class="p-hero__image">
+            
+        </section>
+        <a href="#header" class="c-btn-top" aria-label="ページ上部へ戻る"><i data-lucide="chevron-up" class="p-pageTop"></i></a>
+    </main>
+    <footer class="l-footer">
+        <h2 class="p-footer__title" id="contact">Contact</h2>
+        <button type="button" class="c-btn-mail" id="copyMail" aria-label="メールアドレスをコピー">
+            <span id="mailaddress">atsuchi.ryuusei&commat;gmail.com</span>
+            <i data-lucide="copy" class="p-mailCopy" id="copy-icon"></i>
+            <i data-lucide="circle-check-big" class="p-mailCheck" id="check-icon"></i>
+        </button>
+        <div class="l-footer__inner">
+            <!-- サイト全体のライセンス・免責注記 -->
+            <p class="p-footer__note">
+                <small>※本サイトに掲載している写真は、特記のない限り製作者本人が撮影したものです。</small>
+            </p>
+            <!-- 著作者表示 -->
+            <p class="p-footer__copyright">
+                <small>© 2026 Seiryu Atsuchi All Rights Reserved.</small>
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="js/script.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
