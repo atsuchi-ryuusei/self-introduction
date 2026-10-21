@@ -309,23 +309,21 @@ a.c-btn:hover {
     grid-template-columns: 1fr 1fr;
     padding: 0 1em;
 }
-.l-works-card {
+.p-works-card {
     margin: 0 auto 1.5em;
 }
-.l-works-card__image {
+.p-works-card__image {
     width: 100%;
     aspect-ratio: 1 / 1.414;
     object-fit: cover;
     object-position: top;
-}
-.p-works-card__image {
     border-radius: 8px;
     border: 1px solid var(--accent-color);
 }
 .p-works-card__title {
     margin-bottom: 0.3em;
 }
-.l-works-card time {
+.c-item__time {
     display: block;
 }
 .p-works-card__more {
